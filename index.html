@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>pyzerox</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #eee;
+      color: #333;
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom-color 0.2s ease;
+    }
+    a:hover,
+    a:focus {
+      border-bottom-color: #007acc;
+    }
+
+    /* Container */
+    .container {
+      max-width: 700px;
+      margin: 3rem auto 5rem;
+      padding: 0 1rem;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      padding: 2rem 1rem 3rem;
+      border-bottom: 1px solid #ccc;
+      background: #fff;
+      /* sticky removed */
+      /* position: sticky; */
+      /* top: 0; */
+      /* z-index: 10; */
+    }
+    header img.logo {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 1rem;
+      border: 1px solid #ccc;
+    }
+    header h1 {
+      font-family: Georgia, serif;
+      font-weight: 700;
+      font-size: 2rem;
+      margin: 0;
+      letter-spacing: 0.05em;
+      color: #111;
+    }
+
+    nav {
+      margin-left: auto;
+      font-weight: 600;
+      font-size: 1rem;
+      display: flex;
+      gap: 1.5rem;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    nav a {
+      border-bottom: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+    nav a:hover,
+    nav a:focus {
+      color: #007acc;
+      outline: none;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 4rem;
+    }
+    section h2 {
+      font-family: Georgia, serif;
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
+      color: #111;
+    }
+
+    /* About */
+    #about p {
+      font-size: 1.1rem;
+      color: #444;
+      max-width: 600px;
+    }
+
+    /* Projects */
+    #projects article {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    #projects a.project-link {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #007acc;
+    }
+    #projects a.project-link:hover {
+      text-decoration: underline;
+    }
+    #projects p {
+      margin: 0.3rem 0 0;
+      color: #555;
+      font-size: 1rem;
+    }
+
+    /* Contact */
+    #contact p {
+      font-size: 1.1rem;
+      color: #444;
+      max-width: 600px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav {
+        font-size: 0.9rem;
+        gap: 1rem;
+      }
+      header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+      header h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/215214371?s=400&u=529574be9beed866a036d929f696a788eb355d29&v=4" alt="pyzerox logo" class="logo" />
+    <h1>pyzerox</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm pyzerox. I build Python bots and automation tools.
+    </p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <article>
+      <a href="#" target="_blank" class="project-link" rel="noopener noreferrer">Coming soon!</a>
+    </article>
+
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>
+      You can reach me at
+      <a href="mailto:pyzerox@gmail.com">E-Mail</a>.
+      <a href="https://bsky.app/profile/pyzerox.bsky.social">Bluesky</a>.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 pyzerox
+  </footer>
+
+</body>
+</html>
